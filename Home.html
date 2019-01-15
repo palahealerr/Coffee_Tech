@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Coffee_Tech Home</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<style>
+	/* Computer/Laptop */
+	@media screen and (min-width : 1380px){
+	
+		#popup {display:none;
+            position:fixed;
+            margin:0 auto;
+            top: 22%;
+            left: 28%;
+            transform: translate(-27%, -20%);
+            z-index: 9999; 	
+			border-radius:10px;}
+			
+		#popup img {position:relative; left:5%; width:96%;}
+		#popup h2 {color:orange; position:relative; left:36.5%; margin-top:20px;}
+		.popupdiv {width:193vh; height:93vh; background-color:black;}
+		
+		#mug {height:800px; width:1250px;margin-left:-8px;}
+		.container {width:1250px; margin:0px auto; padding:0px;}
+		.container3 {width:1250px; margin:0px auto; padding:0px;}
+		.container2 {width:1250px; margin:0px auto; padding:0px;}
+		
+		body {background-image: url('Pictures/coffee.jpg'); background-position:50% 25%; background-repeat:no-repeat; background-size:100% 86%;	}
+		
+		#navmenu {margin-top:10px;}
+		.navbar {height:50 px; margin-bottom:0px;}
+		nav a {font-size:20px; }	
+		nav col-lg-4 {height:200px;}
+		#boja {}
+		#navheight { height:70px; margin-top:16px;}
+		.navbar li {margin-right:55px;}	
+		.dropdown ul {margin:5px;	padding:0px; color:orange;}
+		.dropdown-menu li {width:100%; margin:0px; background-color:white; color:orange;}
+		.dropdown ul li a:hover {color:orange;}
+		.dropdown ul li a:hover {background-color:#262626;}
+		
+		.border-img {border:0px solid black; margin-right:45px; margin-bottom:60px; width:325px; height:390px; box-shadow:0.5px 0.5px 4px 3px orange;
+					margin-left:45px; background-color:black;}
+		.border-img img {width:110%; margin-left:-15px; height:65%;}
+		.border-img a {padding:8px; background-color:orange; border-radius:4px; position:relative; top:15px; color:white; font-weight:bold;}
+		.border-img p {color:white; margin-top:0px;}
+		.border-img h3 {margin-top:10px; margin-bottom:5px;}
+		.border-img a:hover {text-decoration:none; }
+		
+					
+		.float-R {margin-left:95px;}
+		.floatL {float:left; width:250px; height:100%;}
+		
+		.slike1 {margin-top:20px;}
+		
+		#kraj {background-color:black; height:225px; width:100%; margin-top:-20px;}
+		#kraj p,h1,h2,h3 {color:white;}
+		#kraj h2,h1,h3 {color:orange; }
+		#footer-imgsize {width:65%;}
+		.footerimg2 {width:100px; height:60px; margin-left:18px;}
+	
+		
+	}
+	
+	
+	
+	
+	/* MOBILE VIEW 466px - 600px*/
+	@media screen and (min-width : 466px) and (max-width : 600px) {
+		#popup {display:none;
+            position:fixed;
+            margin:0 auto;
+            top: 22%;
+            left: 28%;
+            transform: translate(-27%, -20%);
+            z-index: 9999; 
+			border-radius:10px;}
+			
+		#popup img {position:relative; left:5%; width:96%;}
+		#popup h2 {color:orange; position:relative; left:36.5%; margin-top:20px;}
+		.popupdiv {width:50vh; height:33vh; background-color:black;}
+		
+		#mug {height:100%; width:100%;margin-left:-8px;}
+		.container {width:90%; margin:0px auto; padding:0px;}
+		.container2 {width:93%; margin:0px auto; padding:0px; margin-left:5%;}
+		.container3 {width:95%; margin:0px auto; padding:0px;}
+		
+		body {background-image: url('Pictures/coffee.jpg'); background-position:50% 25%; background-repeat:no-repeat; background-size:100% 86%;	}
+		
+		#navmenu {margin-top:10px; max-width:100vw;  }
+		#navmenu h1 {font-size:7vw; margin-left:25%;}
+		.navbar {height:150 px; margin-bottom:0px; }
+		.nav {}
+		nav a {font-size:20px; margin-right:0px; }	
+		nav col-lg-4 {height:200px; }
+		#boja {}
+		#navheight { height:60px; margin-top:16px;}
+		.navbar ul {margin-left:2.5vw; width:100vw;}
+		.navbar li {margin-right:-2vw; display:inline-block; margin-left:0px;  font-size:2.8vw; font-weight:bold;}	
+		.dropdown {width:21vw; position: relative; z-index: 1;}
+		.dropdown ul { margin:5px; padding:0px; color:orange; font-size:7vw; width:10px; }
+		.dropdown-menu li a {font-size:4vw; margin-left:-2vw;}
+		.dropdown-menu li { width:19.8vw; background-color:white; color:orange; float:left;	z-index:2; clear:both;}
+		.dropdown ul li a:hover {color:orange;}
+		.dropdown ul li:hover {background-color:#262626; color:orange;}
+		.a-size {font-size:125%;}
+	
+		
+		
+		.border-img { border:0px solid black; margin-bottom:70px; width:29%; min-height:53vw; max-height:46%;  box-shadow:0.5px 0.5px 4px 3px orange; margin-left:2.3%; background-color:black; display:inline-block; position:relative;	}
+		.border-img img {width:125%; margin-left:-15px; height:120px;}
+		.border-img a { font-size:2.5vw; padding:3%; background-color:orange; border-radius:4px; position:relative; top:0px; color:white; font-weight:bold;}
+		.border-img p {color:white; margin-top:10px; font-size:2.5vw;}
+		.border-img h3 {margin-top:10px; margin-bottom:5px; font-size:3.5vw;}
+		.border-img a:hover {text-decoration:none; }
+		#float {float:left;}
+		.box1 {margin-top:20px;  margin-bottom:15px;}
+		
+					
+		.float-R {margin-left:95px;}
+		.floatL {float:left; width:250px; height:100%;}2
+		
+		.slike1 {margin-top:20px;}
+		
+		#kraj {background-color:black; height:385px; width:100%; margin-top:-20px; }
+		#kraj p,h1,h2,h3 {color:white;}
+		#kraj h2,h1,h3 {color:orange;}
+		#kk {width:150px;}
+		#footer-imgsize {width:25vw;}
+		.right {float:left; margin-left:2vw;}
+		.right2 {float:right;margin-right:9vw;}
+		.clear {clear:both;}
+		.footerimg2 {width:16vw; height:10vw; margin-left:20px; }
+		.moveup {position:relative; top:-1px; left:25px; margin-bottom:-100px;}
+		.la {margin-left:-5px;}
+	}
+	
+	
+	
+	/* MOBILE VIEW  -466 px*/
+	@media screen and (min-width : 250px) and (max-width : 465px) {
+		#popup {display:none;
+            position:fixed;
+            margin:0 auto;
+            top: 22%;
+            left: 28%;
+            transform: translate(-27%, -20%);
+            z-index: 9999; 
+			border-radius:10px;}
+			
+		#popup img {position:relative; left:5%; width:96%;}
+		#popup h2 {color:orange; position:relative; left:36.5%; margin-top:20px;}
+		.popupdiv {width:50vh; height:33vh; background-color:black;}
+		
+		#mug {height:100%; width:100%;margin-left:-8px;}
+		.container {width:90%; margin:0px auto; padding:0px;}
+		.container2 {width:93%; margin:0px auto; padding:0px; margin-left:5%;}
+		.container3 {width:95%; margin:0px auto; padding:0px;}
+		
+		body {background-image: url('Pictures/coffee.jpg'); background-position:50% 25%; background-repeat:no-repeat; background-size:100% 86%;	}
+		
+		#navmenu {margin-top:10px; max-width:100vw;  }
+		#navmenu h1 {font-size:7vw; margin-left:25%;}
+		.navbar {height:150 px; margin-bottom:0px; }
+		.nav {}
+		nav a {font-size:20px; margin-right:0px; }	
+		nav col-lg-4 {height:200px; }
+		#boja {}
+		#navheight { height:60px; margin-top:16px;}
+		.navbar ul {margin-left:2.5vw; width:100vw;}
+		.navbar li {margin-right:-2vw; display:inline-block; margin-left:0px;  font-size:2.8vw; font-weight:bold;}	
+		.dropdown {width:21vw; position: relative; z-index: 1;}
+		.dropdown ul { margin:5px; padding:0px; color:orange; font-size:7vw; width:10px; }
+		.dropdown-menu li a {font-size:4vw; margin-left:-2vw;}
+		.dropdown-menu li { width:19.8vw; background-color:white; color:orange; float:left;	z-index:2; clear:both;}
+		.dropdown ul li a:hover {color:orange;}
+		.dropdown ul li:hover {background-color:#262626; color:orange;}
+		.a-size {font-size:125%;}
+		
+		
+		
+		.border-img {border:0px solid black; margin-bottom:70px; width:37vw; min-height:53vw; max-height:46%;  box-shadow:0.5px 0.5px 4px 3px orange; margin-left:3.3%; background-color:black; display:inline-block; position:relative;	}
+		.border-img img {width:37vw; margin-left:-3.7vw; height:120px;}
+		.border-img a { font-size:3.5vw; padding:3%; background-color:orange; border-radius:4px; position:relative; top:0px; color:white; font-weight:bold;}
+		.border-img p {color:white; margin-top:10px; font-size:3.5vw;}
+		.border-img h3 {margin-top:10px; margin-bottom:5px; font-size:3.5vw;}
+		.border-img a:hover {text-decoration:none; }
+		#float {float:left;}
+		.box1 {margin-top:20px;  margin-bottom:15px;}
+		.col-xs-3 {float:right; }
+		.none {display:none;}
+					
+		.float-R {margin-left:95px;}
+		.floatL {float:left; width:250px; height:100%;}2
+		
+		.slike1 {margin-top:20px;}
+		
+		#kraj {background-color:black; height:385px; width:100%; margin-top:-20px; }
+		#kraj p,h1,h2,h3 {color:white; font-size:3.2vw;}
+		#kraj h2,h1,h3 {color:orange; font-size:4.0vw; font-weight:bold;}
+		#kk {width:110px;}
+		#footer-imgsize {width:25vw;}
+		.right {float:left; margin-left:-3vw;}
+		.right2 {float:right;margin-right:-3vw;}
+		.clear {clear:both;}
+		.footerimg2 {width:15vw; height:10vw; margin-left:20px;}
+		.moveup {position:relative; top:-5px; left:5px; margin-bottom:-150px;}
+		.la {margin-left:-5px;}
+	}
+	
+
+	</style>
+</head>
+	
+<body>	
+
+		<section id="popup" >
+			<div id="close" class="popupdiv">
+				<div class="container">
+					<img src="Pictures/coffeebar.jpg" />
+					<h2>Welcome to Coffee_Tech</p>
+				</div>
+			</div>
+		</section>
+		
+		<div style="background-color:orange; height:20px;">
+		</div>
+		
+		<nav class="navbar navbar-inverse">
+			 <div class="container3" id="navmenu">
+				<div class="col-lg-3 col-sm-3">
+					<h1 style="color:white;" href="#">Coffee_Tech</h1>
+				</div>
+				
+				<div class="col-lg-9 col-sm-9" id="navheight">
+					<ul class="nav navbar-nav">
+						
+						<li class="dropdown">
+							<a class="dropdown-toggle a-size" data-toggle="dropdown" href="#">Products</a>
+							<ul class="dropdown-menu">
+								<li class="li"><a href="#">Coffee</a></li>
+								<li class"li"><a href="#">Tea</a></li>
+								<li class="li"><a href="#">Other</a></li>
+							</ul>
+						</li>
+						<li><a class="a-size" href="#">Photos</a></li>
+						<li><a class="a-size" href="About Us.html">About Us</a></li>
+						<li><a class="a-size" href="Contact.html">Contact</a></li>
+					</ul>
+				</div>
+			 </div>
+		</nav>
+		
+	
+	
+<section id="img">
+	<div  class="container2">
+		<div style="overflow: hidden">
+			<div style="margin-top:30px;">
+				<div class="col-lg-12">
+					<img id="mug" src="Pictures/coffeevintage.jpg"/>
+				</div>
+			</div>
+			<div style="position:relative; top:35px;">
+				<div class="col-lg-3 col-xs-2 border-img" id="float">
+					<img src="Pictures/coffeedesign1.jpg"/>
+						<h3> Coffee </h3>
+						<div id="divdiv"><p>Awesome coffee made right in front of you. Best coffee in town!</p></div>
+						<div class="box1">
+						<a href="#">Read more</a>
+						</div>
+				</div>
+				<div class="col-lg-3 col-xs-2 border-img" id="float">
+				
+					<img  src="Pictures/coffeedesign1.jpg"/>
+					<h3> Organic</h3>
+					<div id="divdiv"><p>Organic products and coffee only here! Don't miss out!</p></div>
+					<div class="box1">
+						<a href="#">Read more</a>
+						</div>
+				</div>
+				<div style="margin-right:0px;" class="col-lg-3 col-xs-2 border-img none" id="float">
+					<img src="Pictures/coffeedesign1.jpg"/>
+					<h3> Coffee2Go </h3>
+					<div id="divdiv"><p>In hurry? Grab Coffee2Go and drink it on you way!</p></div>
+					<div class="box1">
+						<a href="#">Read more</a>
+						</div>
+				</div>
+			</div>
+			
+			<div style="margin-top:30px;">
+				<div class="col-lg-3 col-xs-3 border-img clear" id="float">
+					<img src="Pictures/coffeedesign2.jpg"/>
+					<h3> Tea </h3>
+					<p>In hurry? Grab Coffee2Go and drink it on you way!</p>
+					<div class="box1">
+						<a href="#">Read more</a>
+					</div>
+				</div>
+				<div class="col-lg-3  col-xs-3 border-img" id="float">
+					<img  src="Pictures/coffeedesign1.jpg"/>
+					<h3> Coffee </h3>
+					<p>In hurry? Grab Coffee2Go and drink it on you way!</p>
+						<div class="box1">
+						<a href="#">Read more</a>
+						</div>
+				</div>
+				<div style="margin-right:0px;" class="col-lg-3 col-xs-3 border-img none " id="float">
+					<img src="Pictures/coffeedesign3.jpg"/>
+					<h3> Coffee </h3>
+
+					<p>In hurry? Grab Coffee2Go and drink it on you way!</p>
+						<div class="box1">
+						<a href="#">Read more</a>
+						</div>
+				</div>
+			</div>
+			</div>
+
+	</div>
+		<div id="kraj">
+			<div class="container2 iss" style="overflow: hidden">
+				
+				<div class="col-lg-3 right2 marginR" style="margin-left:0px"><h3>Working Hours </h3>
+					<p>Mon-Fri: 9:00 - 18:00</p>
+					<p>Satudray: 9:00 - 14:00</p>
+				 </div>
+				 
+				 <div class="col-lg-3 right">
+					<h3>Contact</h3>
+					<p>Martićeva 6, Zagreb</p>
+					<p>Tel: +3859536251</p>
+					<p>Tel: +3859159257</p>
+					<p>Email: <br>nosaci@gmail.hr <br> nosaci2@gmail.hr</p>
+				</div>
+				 <div class="col-lg-3 clear right"><h3></h3>
+					<img id="footer-imgsize" src="Pictures/tripadvisor.jpg"/>
+				 </div>
+					
+				 <div class="col-lg-3 right2 moveup"><h3 id="kk">Pay With Credit Cards<h3>
+					<img class="footerimg2" style="margin-left:12px" src="Pictures/visa.jpg">
+					<img class="footerimg2 la" src="Pictures/mastercard.png">
+				 </div>
+			</div>
+		</div>
+	
+			
+			
+			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+			<script>
+				$(document).ready(function(){
+					if($(window).width() > 601){
+					$('#popup').hide().fadeIn(3000);
+					
+					$('#close').on("click",function(){
+						$('#popup').fadeOut(1500);
+					});
+				}
+				});
+			</script>
+
+	</body>
+	
+
+</html>
