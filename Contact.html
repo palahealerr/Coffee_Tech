@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Coffee_Tech Contact</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+			/* Windows Laptop 1380+*/
+	@media screen and (min-width : 1380px){
+		body {margin:0px; background-color:rgb(34, 34, 34);}
+		.container {margin:0px auto; width:1350px;}
+		.container2 {margin:0px auto; width:1350px;}
+		.container3 {margin:0px auto; width:1350px; padding:0px;}
+
+		#color {background-color:orange; width:100%; height:20px;}
+		
+		#navmenu {margin-top:10px;}
+		.navbar {height:50 px; margin-bottom:0px;margin-left:15%;}
+		nav a {font-size:20px; }	
+		nav col-lg-4 {height:200px;}
+		#boja {}
+		#navheight { height:70px; margin-top:16px;}
+		.navbar li {margin-right:55px;}	
+		.dropdown ul {margin:5px;	padding:0px; color:orange;}
+		.dropdown-menu li {width:100%; margin:0px; background-color:white; color:orange;}
+		.dropdown ul li a:hover {color:orange;}
+		.dropdown ul li a:hover {background-color:#262626;}
+		
+		
+		#color1 {background-color:rgb(47, 47, 47); width:100%;}
+		#color2 {color:white; line-height:20px;}
+		#pushright h1  {color:white;}
+		#pushright {margin-left:15%;}
+		#ss {margin-right:70px;margin-left:70px;}
+		
+		.input {width:62%; padding:3.5px; border-radius:3px; border:0px; font-size:15px; font-weight:bold;}
+		#move {margin-left:24%;}
+		.size {font-size:18px; color:white;}
+		#submit {padding:4px 16px 4px 16px; background-color:orange; color:white; border:0px; border-radius:3px;margin-top:8px;
+					font-size:18px;}
+		
+		
+		
+		.float-R {margin-left:95px;}
+		.floatL {float:left; width:250px; height:100%;}
+		.slike1 {margin-top:20px;}
+		#kraj {background-color:rgb(34, 34, 34); height:225px; width:100%; margin-top:25px;}
+		#kraj p,h1,h2,h3 {color:white;}
+		#kraj h2,h1,h3 {color:orange; }
+		#footer-imgsize {width:55%;}
+		.footerimg2 {width:100px; height:60px; margin-left:18px;}
+		
+		
+		
+		.fa {position:fixed;z-index:9999; left:85%; top:94%; }
+		
+		.fa-facebook {list-style:none; text-decoration:none; background-color:#0059b3; padding:11px 15px 9px 15px; font-size:20px; border-radius:25px; color:white;}
+			.fa-facebook:hover {color:white; list-style:none; text-decoration:none; padding:15px 17px 12px 19px;transform: translate(-2px, -1px);}
+			.fa-facebook:active {color:white; list-style:none; text-decoration:none; padding:11px 15px 9px 15px;transform: translate(-2px, -1px);}
+			.fa-facebook:visited { color:white; list-style:none; text-decoration:none; padding:11px 15px 9px 15px;}
+		
+		.fa-instagram {background-color:#e65c00; padding:11px 13px 9px 13px; font-size:20px; border-radius:25px; color:white;margin-left:50px;}
+			.fa-instagram:hover {color:white; list-style:none; text-decoration:none; padding:13px 15px 13px 16px;transform: translate(-2px, -1px);}
+			.fa-instagram:hover {color:white; list-style:none; text-decoration:none; padding:13px 15px 13px 16px;transform: translate(-2px, -1px);}
+			.fa-instagram:active {color:white; list-style:none; text-decoration:none; padding:11px 13px 9px 13px;transform: translate(-2px, -1px);}
+			.fa-instagram:visited {color:white; list-style:none; text-decoration:none; padding:11px 13px 9px 13px;}
+		}
+		
+		
+		
+		
+		/* MOBILE VIEW 451px -  600px*/
+	@media screen and (min-width : 451px) and (max-width : 600px) {
+		body {background-color:rgb(34, 34, 34);}
+		#navmenu {margin-top:10px; max-width:100vw;  }
+		#navmenu h1 {font-size:7vw; margin-left:25%;}
+		.navbar {height:150 px; margin-bottom:0px; }
+		.nav {}
+		nav a {font-size:20px; margin-right:0px; }	
+		nav col-lg-4 {height:200px; }
+		#boja {}
+		#navheight { height:60px; margin-top:16px;}
+		.navbar ul {margin-left:6.5vw; }
+		.navbar li {margin-right:-2vw; display:inline-block; margin-left:0px;  font-size:2.8vw; font-weight:bold;}	
+		.dropdown {width:21vw; position: relative; z-index: 1;}
+		.dropdown ul { margin:5px; padding:0px; color:orange; font-size:7vw; width:10px; }
+		.dropdown-menu li a {font-size:4vw; margin-left:-2vw;}
+		.dropdown-menu li { width:19.8vw; background-color:white; color:orange; float:left;	z-index:2; clear:both;}
+		.dropdown ul li a:hover {color:orange;}
+		.dropdown ul li:hover {background-color:#262626; color:orange;}
+		.a-size {font-size:125%;}
+		
+		#color {background-color:orange; width:100%; height:20px;}
+	
+		#color1 {background-color:rgb(47, 47, 47); width:100%; display:block; font-size:13px}
+		#color1 h2 {font-size:4vw;}
+		#color2 {color:white; line-height:20px;}
+		#pushright h1  {color:white; }
+		#pushright {margin-left:-3%;}
+		#ss {margin-right:0px;}
+		.col-xs-4 {margin-left:0%;}
+		
+		.input {width:85%; padding:3.5px; border-radius:3px; border:0px; font-size:15px; font-weight:bold;}
+		#forma h2 {text-align:center; width:85%;}
+		#move {margin-left:12%;}
+		.size {font-size:18px; color:white;}
+		#submit {padding:4px 16px 4px 16px; background-color:orange; color:white; border:0px; border-radius:3px;margin-top:8px;
+					font-size:18px; margin-left:32%; margin-bottom:15px;}
+					
+					
+		#kraj {background-color:rgb(34, 34, 34); height:385px; width:100%; margin-top:10px; }
+		#kraj p,h1,h2,h3 {color:white;}
+		#kraj h2,h1,h3 {color:orange;}
+		#kk {width:150px;}
+		#footer-imgsize {width:25vw;}
+		.right {float:left; margin-left:2vw;}
+		.right2 {float:right;margin-right:9vw;}
+		.clear {clear:both;}
+		.footerimg2 {width:16vw; height:10vw; margin-left:20px; }
+		.moveup {position:relative; top:-153px; left:25px; margin-bottom:-150px;}
+		.la {margin-left:-5px;}
+		
+		#poslano {margin-left:25%;}
+		
+		.fa {position:fixed;z-index:9999; left:75%; top:94%; }
+		
+		.fa-facebook {list-style:none; text-decoration:none; background-color:#0059b3; padding:11px 15px 9px 15px; font-size:20px; border-radius:25px; color:white;}
+			.fa-facebook:hover {color:white; list-style:none; text-decoration:none; padding:15px 17px 12px 19px;transform: translate(-2px, -1px);}
+			.fa-facebook:active {color:white; list-style:none; text-decoration:none; padding:11px 15px 9px 15px;transform: translate(-2px, -1px);}
+			.fa-facebook:visited { color:white; list-style:none; text-decoration:none; padding:11px 15px 9px 15px;}
+		
+		.fa-instagram {background-color:#e65c00; padding:11px 13px 9px 13px; font-size:20px; border-radius:25px; color:white;margin-left:50px;}
+			.fa-instagram:hover {color:white; list-style:none; text-decoration:none; padding:13px 15px 13px 16px;transform: translate(-2px, -1px);}
+			.fa-instagram:hover {color:white; list-style:none; text-decoration:none; padding:13px 15px 13px 16px;transform: translate(-2px, -1px);}
+			.fa-instagram:active {color:white; list-style:none; text-decoration:none; padding:11px 13px 9px 13px;transform: translate(-2px, -1px);}
+			.fa-instagram:visited {color:white; list-style:none; text-decoration:none; padding:11px 13px 9px 13px;}
+		}
+		
+	
+	
+	
+	
+	/* MOBILE VIEW  250-450 px*/
+	@media screen and (min-width : 265px) and (max-width : 460px) {
+		
+		#navmenu {margin-top:10px; max-width:100vw;  }
+		#navmenu h1 {font-size:7vw; margin-left:25%;}
+		.navbar {height:150 px; margin-bottom:0px; }
+		.nav {}
+		nav a {font-size:23px; margin-right:-5px; }	
+		nav col-lg-4 {height:200px; }
+		#boja {}
+		#navheight { height:60px; margin-top:16px;margin-left:6%;}
+		.navbar ul {margin-left:-2vw;}
+		.navbar li {margin-right:-2vw; display:inline-block; margin-left:0px;  font-size:2.8vw; font-weight:bold;}	
+		.dropdown {width:21vw; position: relative; z-index: 1;}
+		.dropdown ul { margin:5px; padding:0px; color:orange; font-size:7vw; width:10px; }
+		.dropdown-menu li a {font-size:4vw; margin-left:-2vw;}
+		.dropdown-menu li { width:19.8vw; background-color:white; color:orange; float:left;	z-index:2; clear:both;}
+		.dropdown ul li a:hover {color:orange;}
+		.dropdown ul li:hover {background-color:#262626; color:orange;}
+		.a-size {font-size:125%;}
+		
+		#color {background-color:orange; width:100%; height:20px;}
+	
+		#color1 {background-color:rgb(47, 47, 47); width:100%; display:block; font-size:4vw}
+		#color1 h2 {font-size:5vw;}
+		#color2 {color:white; line-height:20px;}
+		#pushright h1  {color:white; }
+		#pushright {margin-left:-10%;}
+		#ss {margin-left:22%;}
+		#ss2 {margin-left:31%; width:55%;}
+		.col-xs-4 {margin-left:9%;}
+		
+		.input {width:85%; padding:3.5px; border-radius:3px; border:0px; font-size:15px; font-weight:bold; }
+		#boja {background-color:rgb(34, 34, 34);}
+		#forma h2 {text-align:center; width:85%; }
+		#move {margin-left:12%;}
+		.size {font-size:18px; color:white;}
+		#submit {padding:4px 16px 4px 16px; background-color:orange; color:white; border:0px; border-radius:3px;margin-top:8px;
+					font-size:18px; margin-left:30%; margin-bottom:15px;}
+					
+					
+		#kraj {background-color:rgb(34, 34, 34); height:325px; width:100%; margin-top:-20px; }
+		#kraj p,h1,h2,h3 {color:white; font-size:3.2vw;}
+		#kraj h2,h1,h3 {color:orange; font-size:4.0vw; font-weight:bold;}
+		#kk {width:110px;}
+		#footer-imgsize {width:25vw;}
+		.right {float:left; margin-left:-3vw;}
+		.right2 {float:right;margin-right:0vw;}
+		.clear {clear:both;}
+		.footerimg2 {width:15vw; height:10vw; margin-left:20px;}
+		.moveup {position:relative; top:-125px; left:0px; margin-bottom:-250px;}
+		.la {margin-left:-5px;}
+		
+		
+		#poslano {margin-left:23%;}
+		
+		
+		.fa {position:fixed;z-index:9999; left:67%; top:94%; }
+		
+		.fa-facebook {list-style:none; text-decoration:none; background-color:#0059b3; padding:11px 15px 9px 15px; font-size:20px; border-radius:25px; color:white;}
+			.fa-facebook:hover {color:white; list-style:none; text-decoration:none; padding:15px 17px 12px 19px;transform: translate(-2px, -1px);}
+			.fa-facebook:active {color:white; list-style:none; text-decoration:none; padding:11px 15px 9px 15px;transform: translate(-2px, -1px);}
+			.fa-facebook:visited { color:white; list-style:none; text-decoration:none; padding:11px 15px 9px 15px;}
+		
+		.fa-instagram {background-color:#e65c00; padding:11px 13px 9px 13px; font-size:20px; border-radius:25px; color:white;margin-left:50px;}
+			.fa-instagram:hover {color:white; list-style:none; text-decoration:none; padding:13px 15px 13px 16px;transform: translate(-2px, -1px);}
+			.fa-instagram:hover {color:white; list-style:none; text-decoration:none; padding:13px 15px 13px 16px;transform: translate(-2px, -1px);}
+			.fa-instagram:active {color:white; list-style:none; text-decoration:none; padding:11px 13px 9px 13px;transform: translate(-2px, -1px);}
+			.fa-instagram:visited {color:white; list-style:none; text-decoration:none; padding:11px 13px 9px 13px;}
+		
+		
+		
+	}
+	</style>
+</head>
+
+
+
+<body>
+	<div id="color">
+	</div>
+	<nav class="navbar navbar-inverse">
+			 <div class="container3" id="navmenu">
+				<div class="col-lg-3 col-sm-3">
+					<h1 style="color:white;" href="#">Coffee_Tech</h1>
+				</div>
+				
+				<div class="col-lg-9 col-sm-9" id="navheight">
+					<ul class="nav navbar-nav">
+						<li><a class="a-size" href="Home.html">Home</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle a-size" data-toggle="dropdown" href="#">Products</a>
+							<ul class="dropdown-menu">
+								<li class="li"><a href="#">Coffee</a></li>
+								<li class"li"><a href="#">Tea</a></li>
+								<li class="li"><a href="#">Other</a></li>
+							</ul>
+						</li>
+						<li><a class="a-size" href="Photos.html">Photos</a></li>
+						<li><a class="a-size" href="About Us.html">About Us</a></li>
+						
+					</ul>
+				</div>
+			 </div>
+		</nav>
+		
+		
+	<section>
+		<div id="googleMap" style="width:100%;height:400px;"></div>
+	</section>
+	
+	<div id="color1">
+		<div class="container" >
+			<div id="pushright">
+			<div class="col-lg-3 col-xs-4" id="ss1">
+				<h2 id="color2" style="color:orange">Email us</h2>
+				<p id="color2">yourmail@gmail.com</p>
+			</div>
+			<div class="col-lg-3 col-xs-4" id="ss">
+				<h2 id="color2" style="color:orange">Call us</h2>
+				<p id="color2">+385 9591632469
+			</div>
+			<div class="col-lg-3 col-xs-4" id="ss2">
+				<h2 id="color2" style="color:orange">Working Hours</h2>
+				<p id="color2">Mon-Fri: 9:00 - 18:00</p>
+				<p id="color2">Satudray: 9:00 - 14:00</p>
+			</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container" id="boja" >
+		<div id="move">
+			<form id="forma">
+				<h2 class="size" >Name: </h2>
+				<input type="text" id="name" class="input"/>
+			
+				<h2 class="size">Email: </h2>
+				<input type="email" name="email1" id="email" class="input"  /><br>
+				
+				<h2 class="size">Message:</h2>
+				<textarea cols="100" rows="10" id="textarea" class="input"></textarea><br>
+				
+				<input type="submit" value="Submit" id="submit" />
+				
+				<div id="poslano" style="color:white;">
+				</div>
+		
+			</form>
+		</div>
+	</div>
+	
+	<div id="kraj">
+			<div class="container2 clear iss" >
+				<div class="col-lg-3 floatRR right2 " style="margin-left:0px"><h3>Working Hours </h3>
+					<p>Mon-Fri: 9:00 - 18:00</p>
+					<p>Satudray: 9:00 - 14:00</p>
+				 </div>
+				 <div class="col-lg-3 floatRR top">
+					<h3 class="top1">Contact</h3>
+					<p>Martićeva 6, Zagreb</p>
+					<p>Tel: +3859536251</p>
+					<p>Tel: +3859159257</p>
+					<p>Email: <br>nosaci@gmail.hr <br> nosaci2@gmail.hr</p>
+				</div>
+				
+				 <div class="col-lg-3 idclear floatRR"><h3></h3>
+					<img id="footer-imgsize" src="Pictures/tripadvisor.jpg"/>
+				 </div>
+					
+				 <div class="col-lg-3  right2 floatRR moveup"><h3 id="kk">Pay With Credit Cards<h3>
+					<img class="footerimg2" style="margin-left:12px" src="Pictures/visa.jpg">
+					<img class="footerimg2 la" src="Pictures/mastercard.png">
+				 </div>
+			</div>
+		</div>
+	
+	<div>
+		<a href="#" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-instagram"></a>
+	</div>
+	
+	
+	<script>
+	
+		//Google maps 
+		function myMap() {
+			var mapProp= {
+			center:new google.maps.LatLng(51.508742,-0.120850),
+			zoom:5,
+			};
+		var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		}
+	
+	
+		//Username counter
+		nameno=0;
+		var name = document.getElementById('name').addEventListener("keyup",user);
+		function user(event){
+			nameno=document.getElementById('name').value.length;
+		}
+		
+		//Validate email	
+		
+		var email = document.getElementById('email').addEventListener("keyup",email);
+		function email(event){
+			var re=/@/;
+			return re.test(String(email).toLowerCase());
+		
+		}
+		
+		//Send i provjera
+		document.getElementById("forma").addEventListener("submit",function(event){
+			event.preventDefault();
+			var new1=document.createElement("div");
+			new1.classList.add("Poslano");
+			
+			if(nameno > 0) {
+				new1.innerHTML= 'Message = sent';
+				document.getElementById('poslano').appendChild(new1);
+			}
+			else {
+				new1.innerHTML="Please write your Name";
+				document.getElementById('poslano').appendChild(new1);
+			}
+
+
+			setTimeout(function(){
+				if ( $("#poslano").length > 0) {
+					$("#poslano").remove();
+				}
+			},3000);
+
+			
+		});
+		
+	</script>
+	
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVz36suDH8OUC_m7C3sCdYvWJkQ5cbE8Y&callback=myMap"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+		//Red if no input
+		$(document).ready(function(){
+            $('#name').on("click keyup", function() {
+                $(this).css({backgroundColor:"orange", color: "white"})
+            });
+			$('#name').on("mouseout", function() {
+                $(this).css({backgroundColor:"white",color: "black"})
+            });
+			
+			$('#email').on("click keyup", function() {
+                $(this).css({backgroundColor:"orange",color: "white"})
+            });
+			$('#email').on("mouseout", function() {
+                $(this).css({backgroundColor:"white", color: "black"})
+            });
+			
+			$('#textarea').on("click keyup", function() {
+                $(this).css({backgroundColor:"orange", color: "white",})
+            });
+			$('#textarea').on("mouseout", function() {
+                $(this).css({backgroundColor:"white", color: "black",})
+            });
+			
+			
+		});
+	</script>
+</body>
+</html>
